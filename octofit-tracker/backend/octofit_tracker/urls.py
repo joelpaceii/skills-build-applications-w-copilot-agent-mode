@@ -44,8 +44,11 @@ def api_root(request):
         'workouts': f'{base_url}workouts/',
     })
 
+from django.views.generic import RedirectView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', RedirectView.as_view(url='/api/', permanent=False)),
     path('api/', api_root, name='api_root'),
     path('api/', include(router.urls)),
 ]
