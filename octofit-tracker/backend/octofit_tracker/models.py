@@ -3,14 +3,13 @@ from djongo import models
 class User(models.Model):
     email = models.EmailField(unique=True)
     name = models.CharField(max_length=100)
-    team = models.CharField(max_length=50)
+    team = models.ForeignKey('Team', on_delete=models.CASCADE, related_name='members')
     is_superhero = models.BooleanField(default=True)
     class Meta:
         db_table = 'users'
 
 class Team(models.Model):
     name = models.CharField(max_length=50, unique=True)
-    members = models.ArrayReferenceField(to=User, on_delete=models.CASCADE)
     class Meta:
         db_table = 'teams'
 
