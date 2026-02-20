@@ -1,0 +1,111 @@
+
+body {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  color: #22223b;
+}
+
+
+.octofit-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%) !important;
+  box-shadow: 0 2px 8px rgba(60,60,120,0.08);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+  color: #fbbf24 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, .card-title {
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+/* Tables */
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(60,60,120,0.06);
+}
+.table thead {
+  background: #6366f1;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f1f5f9;
+}
+
+/* Buttons */
+.btn, .btn-primary {
+  background: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%);
+  color: #fbbf24;
+}
+
+/* Links */
+a, .App-link {
+  color: #6366f1;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover, .App-link:hover {
+  color: #fbbf24;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(60,60,120,0.08);
+}
+
+/* Modals */
+.modal-content {
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(60,60,120,0.12);
+}
+
+/* Custom favicon (handled in public/index.html) */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
